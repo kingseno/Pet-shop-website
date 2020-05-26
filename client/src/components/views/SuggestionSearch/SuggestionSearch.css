@@ -1,0 +1,160 @@
+
+.search-suggestion {
+  display: flex;
+  margin: 17px 0px 16px 60px;
+}
+
+.search-icon {
+  height: 40px;
+  width: 40px; 
+  border: 1px solid #DDD;
+  border-left: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-autosuggest__container {
+    position: relative;
+  }
+  
+  .react-autosuggest__input {
+    width: 360px;
+    height: 40px;
+    padding: 10px 20px;
+    /* font-family: Helvetica, sans-serif; */
+    font-weight: 300;
+    font-size: 14px;
+
+    border: 1px solid #DDD;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: none;
+  }
+  
+  .react-autosuggest__input--focused {
+    outline: none;
+  }
+  
+  /* .react-autosuggest__input--open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  } */
+  
+  .react-autosuggest__suggestions-container {
+    display: none;
+  }
+  
+  .react-autosuggest__suggestions-container--open {
+    display: block;
+    position: absolute;
+
+    top: 40px;
+    width: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+
+    border: 1px solid #aaa;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    background-color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    z-index: 9999;
+  }
+  
+  .react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .react-autosuggest__suggestion {
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .react-autosuggest__suggestion--highlighted {
+    background-color: #ddd;
+  }
+
+  .react-autosuggest__suggestions-container--open {
+    border: none;
+  }
+  
+  .small-card {
+    display: flex;
+  }
+  .small-card .small-card-image {
+    font-size: 20px;
+    padding-right: 8px;
+  }
+
+  .small-card .small-card-image img {
+    width: 150px;
+    height: auto;
+  }
+
+  .small-card .small-card-info {
+    font-size: 14px;
+    flex-grow: 1;
+  }
+  
+  .small-card .small-card-price {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .small-card .small-card-title {
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 1210px){
+    .react-autosuggest__input {
+      width: 300px;
+    }
+    .react-autosuggest__suggestions-container--open {
+      width: 340px;
+    }
+    .search-suggestion {
+      display: flex;
+      margin: 17px 0px 16px 40px;
+    }
+  }
+
+  @media (max-width: 1130px){
+    .react-autosuggest__input {
+      width: 260px;
+    }
+    .react-autosuggest__suggestions-container--open {
+      width: 300px;
+    }
+    .search-suggestion {
+      display: flex;
+      margin: 17px 0px 16px 20px;
+    }
+  }
+  @media (max-width: 1070px){
+    .react-autosuggest__input {
+      width: 220px;
+    }
+    .react-autosuggest__suggestions-container--open {
+      width: 260px;
+    }
+    .search-suggestion {
+      display: flex;
+      margin: 17px 0px 16px 10px;
+    }
+  }
+  @media (max-width: 1050px){
+    .react-autosuggest__input {
+      width: 360px;
+    }
+    .react-autosuggest__suggestions-container--open {
+      width: 400px;
+    }
+  }

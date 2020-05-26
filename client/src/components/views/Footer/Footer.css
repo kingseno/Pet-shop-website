@@ -1,0 +1,26 @@
+@import '~antd/dist/antd.css';
+
+.footer_container {
+    background-color: #EEE;
+    font-size: 20px;
+}
+
+.footer_content {
+    width: 75%;
+    margin: 3rem auto;
+    padding-left: 11rem;
+}
+
+.footer_link, .footer_guideline, .footer_policy {
+    display: flex;
+    flex-direction: column;
+}
+
+.copy_right {
+    text-align: center;
+}
+
+.footer_element {
+    font-size: 14px;
+    padding: 5px 0px;
+}
